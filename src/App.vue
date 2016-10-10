@@ -1,19 +1,21 @@
 <template>
   <div id="app">
-    <main-header></main-header>
-blabla
+    <user-logged-non-logged-in></user-logged-non-logged-in>
+    <user-main-login></user-main-login>
+    <user-footer></user-footer>
   </div>
 </template>
-
 <script>
-import MainHeader from './components/main-header'
+import UserMainLogin from './components/user-main-login'
+import UserLoggedNonLoggedIn from './components/user-logged-non-logged-in'
+import UserFooter from './components/user-footer'
 export default {
   components: {
-    MainHeader
+    UserMainLogin,
+    UserLoggedNonLoggedIn,
+    UserFooter
   }
 }
 </script>
-
 <style>
-
 </style>

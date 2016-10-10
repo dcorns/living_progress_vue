@@ -5,7 +5,6 @@
       <div class="clarity-line"></div>
       <div class="triangle-big"></div>
       <div class="triangle-small"></div>
-
       <div class="login">
         <div class="login-header">
           <a href="javascript:;" class="logo-bar">
@@ -56,18 +55,4 @@
 <script>
 </script>
 <style>
-  /**{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;*/
-    /*font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;}*/
-  /*:after,:before*/
-  /*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}*/
-  /*.main {*/
-    /*display: block;*/
-    /*font-size: 14px;*/
-  /*}*/
-  /*.login-register-main{*/
-    /*background-color: #000;*/
-    /*position: relative;*/
-    /*min-height: 780px;*/
-    /*z-index: 10;*/
-  /*}*/
 </style>
