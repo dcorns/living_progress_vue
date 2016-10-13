@@ -25,7 +25,7 @@
             </p>
             <a href="javascript:;" class="btn-green btn-join-now">Join Now</a>
           </div>
-          <img src="i/carousel-ads-img.jpg" alt="photo" >
+          <img src="../../i/carousel-ads-img.jpg" alt="photo" >
         </div>
       </div>
       <!-- end .with-ads -->
@@ -319,7 +319,7 @@
         </p>
         <div class="photo-text-area">
           <span class="photos">
-            <img src="i/story-img.png" alt="photo" >
+            <img src="../../i/story-img.png" alt="photo" >
           </span>
           <div class="text-area">
             <p>
@@ -384,5 +384,6 @@
     <!-- end .story-box -->
   </div>
 </template>
-<script></script>
+<script>
+</script>
 <style></style>

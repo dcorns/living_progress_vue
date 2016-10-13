@@ -8,11 +8,11 @@
   </div>
 </template>
 <script>
-  import UserNav from './user-nav'
-  import UserHeader from './user-header'
-  import UserCrumbs from './user-crumbs'
-  import UserFilterBox from './user-filter-box'
-  import UserBanner from './user-banner'
+  import UserNav from './shared-components/user-nav'
+  import UserHeader from './shared-components/user-header'
+  import UserCrumbs from './shared-components/user-crumbs'
+  import UserFilterBox from './shared-components/user-filter-box'
+  import UserBanner from './shared-components/user-banner'
   export default{
     components: {
       UserNav,

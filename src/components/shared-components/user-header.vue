@@ -13,7 +13,7 @@
     <div class="pull-right">
       <a href="my-profile.html" class="user-name">
         <span class="name-txt">James Shawn</span>
-        <img class="person" src="i/people-66x66-1.png" alt="person">
+        <img class="person" src="../../i/people-66x66-1.png" alt="person">
         <span class="icons icon-down"></span>
       </a>
       <a href="register.html" class="btn-green btn-register">Register</a>

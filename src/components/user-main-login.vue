@@ -52,7 +52,9 @@
     </main>
   </div>
 </template>
-<script>
-</script>
-<style>
-</style>
+<script></script>
+<!--import transform from '../js/jquery.jqtransform'-->
+<!--if($(".form-container").length>0){-->
+<!--$('.form-container').jqTransform({imgPath:'i/forms/'});-->
+<!--}-->
+<style></style>
