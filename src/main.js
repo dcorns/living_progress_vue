@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './App'
+import AdminMyProfile from './Admin-My-Profile'
 // css imports
 import './lib/bootstrap/css/bootstrap.min.css'
 import './css/jquery.ui.css'
@@ -14,4 +15,8 @@ import './js/jquery.jqtransform'
 new Vue({
   el: '#app',
   render: h => h(App)
-})
+});
+new Vue({
+  el: '#admin-my-profile',
+  render: h => h(AdminMyProfile)
+});
