@@ -3,6 +3,9 @@
     <a class="logo" href="javascript:;"></a>
     <nav class="nav">
       <ul>
+        <li><router-link to="/">/</router-link></li>
+        <li><router-link to="/other">Other</router-link></li>
+        <li><router-link to="/login">/Login</router-link></li>
         <li class="current"><a href="home-non-logged-in-user.html">Home</a></li>
         <li><a href="browse-opportunities-and-organizations.html">Browse Opportunities</a></li>
         <li><a href="browse-groups.html">Browse Groups</a></li>
