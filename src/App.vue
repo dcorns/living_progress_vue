@@ -6,7 +6,6 @@
     </div>
 </template>
 <script>
-import UserMainLogin from './components/user-main-login'
 import UserLoggedNonLoggedIn from './components/user-logged-non-logged-in'
 import UserFooter from './components/user-footer'
 
