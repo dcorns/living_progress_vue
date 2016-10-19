@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App'
 import Other from './Other'
 import UserMainLogin from './components/user-main-login.vue'
+import Register from './Register.vue'
 // css imports
 import './lib/bootstrap/css/bootstrap.min.css'
 import './css/jquery.ui.css'
@@ -31,7 +32,8 @@ const router = new VueRouter({
   routes: [
     { path: '/', component: UserMainLogin },
     { path: '/login', component: UserMainLogin },
-    { path: '/other', component: Other }
+    { path: '/other', component: Other },
+    { path: '/register', component: Register }
   ]
 });
 

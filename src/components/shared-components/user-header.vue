@@ -19,7 +19,7 @@
         <img class="person" src="../../i/people-66x66-1.png" alt="person">
         <span class="icons icon-down"></span>
       </a>
-      <a href="register.html" class="btn-green btn-register">Register</a>
+      <router-link to="/register" class="btn-green btn-register">Register</router-link>
     </div>
   </header>
 </template>
