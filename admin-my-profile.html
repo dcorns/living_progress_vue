@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Tags -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="format-detection" content="telephone=no">
+  <title>My Profile</title>
+
+  <!-- font -->
+  <link href="css/font.css" rel="stylesheet" />
+  <!-- Bootstrap -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="lib/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+  <!-- Main CSS -->
+  <link href="css/jquery.ui.css" rel="stylesheet" />
+  <link href="css/jqtransform.css" rel="stylesheet" />
+  <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" />
+  <link href="css/screen.css" rel="stylesheet" />
+
+  <!-- jQuery library -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/jquery.jqtransform.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Main JS -->
+  <script src="js/script.js"></script>
+</head>
+<body>
+<div class="logged logged-in-user">
+  <div class="nav-part">
+    <nav class="nav pull-left">
+      <ul>
+        <li><a href="volunteer-dashboard.html">Dashboard</a></li>
+        <li class="current"><a href="my-profile.html">My Profile</a></li>
+      </ul>
+    </nav>
+    <span class="pull-right">
+      <a href="login.html" class="links">Logout</a>
+    </span>
+  </div>
+  <!-- end .nav-part -->
+  <header class="header">
+    <a class="logo" href="javascript:;"></a>
+    <nav class="nav">
+      <ul>
+        <li><a href="home-logged-in-user.html">Home</a></li>
+        <li><a href="browse-opportunities-and-organizations.html">Browse Opportunities</a></li>
+        <li><a href="browse-groups.html">Browse Groups</a></li>
+        <li><a href="javascript:;">Blog</a></li>
+        <li><a href="javascript:;">About Us</a></li>
+      </ul>
+    </nav>
+    <div class="pull-right">
+      <a href="my-profile.html" class="user-name">
+        <span class="name-txt">Germaine Jenkins</span>
+        <img class="person" src="i/people-66x66-1.png" alt="person">
+        <span class="icons icon-down"></span>
+      </a>
+      <a href="register.html" class="btn-green btn-register">Register</a>
+    </div>
+  </header>
+  <!-- end .header -->
+
+  <div class="crumbs">
+    <div class="lefts pull-left">
+      <a href="my-profile.html" class="links">My Profile</a>
+      <i class="icons icon-right-arrow"></i>
+      <span class="value-txt">Details</span>
+    </div>
+    <!-- end .lefts -->
+    <div class="rights pull-right">
+      <a href="javascript:;" class="icons btn-icon-search"></a>
+    </div>
+    <!-- end .rights -->
+  </div>
+  <!-- end .crumbs -->
+
+  <div class="filter-box hide">
+    <h2 class="title-h2">Search and Share Ways to Do Good</h2>
+    <div class="form-area">
+      <div class="row-search">
+        <a href="search_result.html" class="btn-search pull-right">Search</a>
+        <div class="main-box">
+          <div class="dropdown dropdown-default pull-right">
+            <a class="dropdown-txt" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              <span class="value selected-option">All Interest Categories</span>
+              <span class="icons icon-tag"></span>
+              <span class="icons fa fa-chevron-down" aria-hidden="true"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="javascript:;">All Interest Categories</a></li>
+              <li><a href="javascript:;">Adult education</a></li>
+              <li><a href="javascript:;">Animals</a></li>
+              <li><a href="javascript:;">Arts and culture</a></li>
+              <li><a href="javascript:;">Children and youth education</a></li>
+              <li><a href="javascript:;">Civic and community</a></li>
+              <li><a href="javascript:;">Disaster and emergency services</a></li>
+              <li><a href="javascript:;">Environment</a></li>
+              <li><a href="javascript:;">Faith-based service</a></li>
+              <li><a href="javascript:;">Family services</a></li>
+              <li><a href="javascript:;">Health and wellness</a></li>
+              <li><a href="javascript:;">Hunger and homelessness</a></li>
+              <li><a href="javascript:;">Immigrant and refugee services</a></li>
+              <li><a href="javascript:;">International service</a></li>
+              <li><a href="javascript:;">Internships and employment</a></li>
+              <li><a href="javascript:;">Justice and legal services</a></li>
+              <li><a href="javascript:;">Schools</a></li>
+              <li><a href="javascript:;">Senior services</a></li>
+              <li><a href="javascript:;">Sports and recreation</a></li>
+              <li><a href="javascript:;">Technology</a></li>
+              <li><a href="javascript:;">Veterans and military families</a></li>
+            </ul>
+          </div>
+          <!-- end .dropdown -->
+          <span class="inputs"><i class="icons icon-search"></i><input type="search" placeholder="Search Opportunities, Group, Cities, etc" ></span>
+        </div>
+        <!-- end .main-box -->
+      </div>
+      <!-- end .row-search -->
+      <div class="row-filter hide">
+        <div class="col-calendar">
+          <span class="inputs calendar">
+            <input name="from-date" type="text" class="from-date" placeholder="From Date" readonly>
+            <a href="javascript:;" class="icons icon-calendar date-icon"></a>
+          </span>
+        </div>
+        <div class="col-calendar">
+          <span class="inputs calendar">
+            <input name="to-date" type="text" class="to-date" placeholder="To Date" readonly>
+            <a href="javascript:;" class="icons icon-calendar to-date-icon"></a>
+          </span>
+        </div>
+        <div class="col-dropdown">
+          <div class="dropdown dropdown-default">
+            <a class="dropdown-txt" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              <span class="value selected-option">Participate in this National Events</span>
+              <span class="icons fa fa-chevron-down" aria-hidden="true"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="javascript:;">Participate in this National Events1</a></li>
+              <li><a href="javascript:;">Participate in this National Events2</a></li>
+            </ul>
+          </div>
+          <!-- end .dropdown -->
+        </div>
+      </div>
+      <!-- end .row-filter -->
+      <div class="row-btn">
+        <a href="javascript:;" class="link-more">+ More Options</a>
+        <a href="javascript:;" class="link-less hide">- Less Options</a>
+      </div>
+      <!-- end .row-btn -->
+    </div>
+    <!-- end .form-area -->
+  </div>
+  <!-- end .filter-box -->
+
+  <div class="banner-container hide">
+    <div class="head">
+      <nav class="nav pull-left">
+        <ul>
+          <li><a href="javascript:;">Volunteers</a></li>
+          <li><a href="javascript:;">Cause Account</a></li>
+        </ul>
+      </nav>
+      <div class="rights pull-right">
+        <a href="login.html" class="btn-green btn-log-in">Log In</a>
+      </div>
+    </div>
+    <!-- end .head -->
+    <div class="carousel-box">
+
+      <div class="with-ads hide">
+        <div class="boxs">
+          <a href="javascript:;" class="btn-close"><span class="spacing">X</span>Close ads</a>
+          <div class="info-area">
+            <p class="txt">
+              HOPE Coalition America<i class="br"></i>
+              National Financial Recovery<i class="br"></i>
+              Volunteer at Operation HOPE, Inc.
+            </p>
+            <a href="javascript:;" class="btn-green btn-join-now">Join Now</a>
+          </div>
+          <img src="i/carousel-ads-img.jpg" alt="photo" >
+        </div>
+      </div>
+      <!-- end .with-ads -->
+
+      <div class="triangle-big"></div>
+      <div class="triangle-small"></div>
+      <div id="logged-carousel-example" class="carousel slide" data-ride="carousel" data-interval="">
+        <ol class="carousel-indicators">
+          <li data-target="#logged-carousel-example" data-slide-to="0" class="active"></li>
+          <li data-target="#logged-carousel-example" data-slide-to="1"></li>
+          <li data-target="#logged-carousel-example" data-slide-to="2"></li>
+        </ol>
+        <!-- .carousel-indicators -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <div class="boxs">
+              <div class="img-bg-one"></div>
+              <div class="clarity-line"></div>
+              <div class="infos">
+                <h2 class="title-h2">
+                  Spring 2016 Program<i class="br"></i>
+                  Volunteer Internship
+                </h2>
+                <p class="txt-p">
+                  Volunteer Internship OverviewSophia Jimenez, Program Manager, in support of the Program Team in Los
+                  Angeles, will coordinate this volunteer internship. Volunteer interns can expect to support...
+                </p>
+                <div class="detail-dvent">
+                  <ul>
+                    <li>
+                      <span class="icon-txt">
+                        <i class="icons icon-map"></i>
+                        <span class="txt">Redwood City, CA</span>
+                      </span>
+                    </li>
+                    <li>
+                      <span class="icon-txt">
+                        <i class="icons icon-time"></i>
+                        <span class="txt">Sat, June 3, 2016 at 10 AM</span>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <!-- end .detail-dvent -->
+                <div class="btn-box">
+                  <a href="javascript:;" class="btn-green btn-see-opportunity">See Opportunity</a>
+                </div>
+                <!-- end .btn-box -->
+              </div>
+              <!-- end .infos -->
+              <div class="icon-dvent">
+                <ul>
+                  <li>
+                    <span class="icon-txt">
+                      <i class="icons icon-user"></i>
+                      <span class="txt">132</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="icon-txt">
+                      <i class="icons icon-link"></i>
+                      <span class="txt">302</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="icon-txt">
+                      <i class="icons icon-praise"></i>
+                      <span class="txt">483</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="icon-txt">
+                      <i class="icons icon-comment"></i>
+                      <span class="txt">48</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="icon-txt">
+                      <i class="icons icon-price"></i>
+                      <span class="txt">$2,740</span>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <!-- end .icon-dvent -->
+            </div>
+            <!-- end .boxs -->
+          </div>
+          <!-- end .item -->
+          <div class="item">
+            <div class="boxs">
+              <div class="img-bg-two"></div>
+              <div class="clarity-line"></div>
+              <div class="infos">
+                <h2 class="title-h2">
+                  Become a reading partner- make<i class="br"></i>
+                  a lifelong impact on a child
+                </h2>
+                <p class="txt-p">
+                  Reading Partners needs volunteers like you to provide students in under-resourced elementary schools in your
+                  community with the proven, individualized reading support they need to read at grade level by fourth grade...
+                </p>
+                <div class="detail-dvent">
+                  <ul>
+                    <li>
+                      <span class="icon-txt">
+                        <i class="icons icon-map"></i>
+                        <span class="txt">Redwood City, CA</span>
+                      </span>
+                    </li>
+                    <li>
+                      <span class="icon-txt">
+                        <i class="icons icon-time"></i>
+                        <span class="txt">Sat, June 3, 2016 at 10 AM</span>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <!-- end .detail-dvent -->
+                <div class="btn-box">
+                  <a href="javascript:;" class="btn-green btn-see-opportunity">See Opportunity</a>
+                </div>
+                <!-- end .btn-box -->
+              </div>
+              <!-- end .infos -->
+              <div class="icon-dvent">
+                <ul>
+                  <li>
+                    <span class="icon-txt">
+                      <i class="icons icon-user"></i>
+                      <span class="txt">132</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="icon-txt">
+                      <i class="icons icon-link"></i>
+                      <span class="txt">302</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="icon-txt">
+                      <i class="icons icon-praise"></i>
+                      <span class="txt">483</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="icon-txt">
+                      <i class="icons icon-comment"></i>
+                      <span class="txt">48</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="icon-txt">
+                      <i class="icons icon-price"></i>
+                      <span class="txt">$2,740</span>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <!-- end .icon-dvent -->
+            </div>
+            <!-- end .boxs -->
+          </div>
+          <!-- end .item -->
+          <div class="item">
+            <div class="boxs">
+              <div class="img-bg-three"></div>
+              <div class="clarity-line"></div>
+              <div class="infos">
+                <h2 class="title-h2 top20">
+                  Events Coordinator Volunteer
+                </h2>
+                <p class="txt-p">
+                  End Malaria Now is seeking motivated, hard-working and responsible college students or young
+                  professionals looking to gain experience working with a nonprofit. Prior volunteer experience...
+                </p>
+                <div class="detail-dvent">
+                  <ul>
+                    <li>
+                      <span class="icon-txt">
+                        <i class="icons icon-map"></i>
+                        <span class="txt">Redwood City, CA</span>
+                      </span>
+                    </li>
+                    <li>
+                      <span class="icon-txt">
+                        <i class="icons icon-time"></i>
+                        <span class="txt">Sat, June 3, 2016 at 10 AM</span>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <!-- end .detail-dvent -->
+                <div class="btn-box">
+                  <a href="javascript:;" class="btn-green btn-see-opportunity">See Opportunity</a>
+                </div>
+                <!-- end .btn-box -->
+              </div>
+              <!-- end .infos -->
+              <div class="icon-dvent">
+                <ul>
+                  <li>
+                    <span class="icon-txt">
+                      <i class="icons icon-user"></i>
+                      <span class="txt">132</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="icon-txt">
+                      <i class="icons icon-link"></i>
+                      <span class="txt">302</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="icon-txt">
+                      <i class="icons icon-praise"></i>
+                      <span class="txt">483</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="icon-txt">
+                      <i class="icons icon-comment"></i>
+                      <span class="txt">48</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="icon-txt">
+                      <i class="icons icon-price"></i>
+                      <span class="txt">$2,740</span>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <!-- end .icon-dvent -->
+            </div>
+            <!-- end .boxs -->
+          </div>
+          <!-- end .item -->
+        </div>
+        <!-- .carousel-inner -->
+      </div>
+    </div>
+    <!-- end .carousel-box -->
+    <div class="banner-box hide">
+      <div class="banner-img"></div>
+      <div class="infos">
+        <h2 class="title-h2">
+          Become a reading partner<i class="br"></i>
+          make a lifelong impact on a child<i class="br"></i>
+          (Carthay Center Elementary, LA)
+        </h2>
+        <p class="txt-p">
+          Volunteer Internship OverviewSophia Jimenez, Program Manager, in support of the Program Team in Los
+          Angeles, will coordinate this volunteer internship. Volunteer interns can expect to support...
+        </p>
+        <div class="detail-dvent">
+          <ul>
+            <li>
+              <span class="icon-txt">
+                <i class="icons icon-map"></i>
+                <span class="txt">Redwood City, CA</span>
+              </span>
+            </li>
+            <li>
+              <span class="icon-txt">
+                <i class="icons icon-time"></i>
+                <span class="txt">Sat, June 3, 2016 at 10 AM</span>
+              </span>
+            </li>
+          </ul>
+        </div>
+        <!-- end .detail-dvent -->
+        <div class="btn-box">
+          <a href="javascript:;" class="btn-green btn-join-this-opportunity">Join This Opportunity</a>
+        </div>
+        <!-- end .btn-box -->
+      </div>
+      <!-- end .infos -->
+
+    </div>
+    <!-- end .banner-box -->
+    <div class="story-box hide">
+      <div class="infos">
+        <div class="time-txt">Wednesday, May 29, 2016</div>
+        <h2 class="title-h2">
+          Special needs students and youth volunteers learn from each<i class="br"></i>
+          other in Rosie’s Class
+        </h2>
+        <p class="txt-p">
+          Meet Daily Point of Light Award honoree Rosie Arbittier. Read her story and nominate an outstanding volunteer, family or organization as a Point of Light.
+        </p>
+        <div class="photo-text-area">
+          <span class="photos">
+            <img src="i/story-img.png" alt="photo" >
+          </span>
+          <div class="text-area">
+            <p>
+              As a child, Rosie Arbittier, participated in walkathons sponsored by her local synagogue and placed flags on soldiers’
+              graves on Veterans Day. That spirit of volunteerism continued into her teens, when she started tutoring special
+              needs students at her middle school in York, Pennsylvania.
+            </p>
+            <p>
+              The experience was an eye-opener.
+            </p>
+            <p>
+              “I began to see how isolated these kids were,” says Rosie, now 17. “They were told not to talk to me unless I talked to
+              them first. They weren't allowed to audition to be in a school play or to try out for a team. They spent their whole
+              day with the same students and it was obvious that they just weren’t getting enough opportunities to socialize.”
+            </p>
+            <div class="btn-box">
+              <a href="javascript:;" class="btn-green btn-read-more pull-left">Read more</a>
+              <div class="icon-dvent pull-left">
+                <ul>
+                  <li>
+                    <span class="icon-txt">
+                      <i class="icons icon-user"></i>
+                      <span class="txt">132</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="icon-txt">
+                      <i class="icons icon-link"></i>
+                      <span class="txt">302</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="icon-txt">
+                      <i class="icons icon-praise"></i>
+                      <span class="txt">483</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="icon-txt">
+                      <i class="icons icon-comment"></i>
+                      <span class="txt">48</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="icon-txt">
+                      <i class="icons icon-price"></i>
+                      <span class="txt">$2,740</span>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <!-- end .icon-dvent -->
+            </div>
+            <!-- end .btn-box -->
+          </div>
+        </div>
+        <!-- end .photo-text-area -->
+      </div>
+      <!-- end .infos -->
+    </div>
+    <!-- end .story-box -->
+  </div>
+</div>
+<!-- end .logged -->
+
+<div class="infos-area">
+  <div class="user-nav-tab">
+    <div class="user-bar pull-left">
+      <a href="javascript:;" class="person"><img src="i/people-66x66-1.png" alt="photo"></a>
+      <span class="name-txt">Germaine Jenkins</span>
+      <span class="fermentum">- The Fermentum</span>
+      <span class="icons icon-crown"></span>
+      <div class="line"></div>
+    </div>
+    <!-- end .user-bar -->
+    <nav class="nav-tab pull-left">
+      <ul>
+        <li class="active"><a href="javascript:;">Details</a></li>
+        <li><a href="javascript:;">Following</a></li>
+        <li><a href="javascript:;">Favorites</a></li>
+        <li><a href="javascript:;">Badges</a></li>
+      </ul>
+    </nav>
+    <a href="javascript:;" class="btn-edit pull-right">
+      <span class="icons icons-edit"></span>
+      <span class="txt">Edit</span>
+    </a>
+  </div>
+  <!-- end .user-nav-tab -->
+  <div class="info-details clearfix">
+    <ul class="picture-group clearfix">
+      <li><a href="javascript:;"><img src="i/photo-109x107-1.jpg" alt="photo"></a></li>
+      <li><a href="javascript:;"><img src="i/photo-109x107-2.jpg" alt="photo"></a></li>
+      <li><a href="javascript:;"><img src="i/photo-109x107-3.jpg" alt="photo"></a></li>
+      <li><a href="javascript:;"><img src="i/photo-109x107-4.jpg" alt="photo"></a></li>
+      <li><a href="javascript:;"><img src="i/photo-109x107-5.jpg" alt="photo"></a></li>
+      <li><a href="javascript:;" class="btn-more">7+</a></li>
+    </ul>
+    <!-- end .picture-group -->
+    <div class="right-info">
+      <div class="row">
+        <div class="col col-info">
+          <h3 class="title">INFO</h3>
+          <span class="icons icons-user"></span>
+          <p class="txt-p">
+            <span  class="email-txt">Danniel_owen@gmail.com</span>
+            <span  class="time-txt">June 21, 1988</span>
+          </p>
+          <div class="fb-txt"><span class="fb-round">f</span>dannielowen</div>
+          <div class="fb-txt"><span class="tt-round">t</span>@danielowen</div>
+        </div>
+        <!-- end .col-info -->
+        <div class="col col-skills">
+          <h3 class="title">SKILLS</h3>
+          <span class="icons icons-skills"></span>
+          <ul class="list">
+            <li><a href="javascript:;">Communication</a></li>
+            <li><a href="javascript:;">Public Relationship</a></li>
+            <li><a href="javascript:;">Accountant</a></li>
+          </ul>
+        </div>
+        <!-- end .col-skills -->
+        <div class="col col-interests">
+          <h3 class="title">INTERESTS</h3>
+          <span class="icons icons-interests"></span>
+          <ul class="list">
+            <li><a href="javascript:;">Books</a></li>
+            <li><a href="javascript:;">Adventure</a></li>
+            <li><a href="javascript:;">Bussiness</a></li>
+            <li><a href="javascript:;">Sports</a></li>
+          </ul>
+        </div>
+        <!-- end .col-interests -->
+      </div>
+    </div>
+  </div>
+  <!-- end .info-details -->
+</div>
+<!-- end .infos-area -->
+
+<main class="main my-profile-main top-border">
+  <div class="tab-content tab-details tab-no-bg clearfix">
+    <aside class="right-aside pull-right">
+
+      <div class="with-ads right-with-ads hide">
+        <div class="boxs">
+          <a href="javascript:;" class="btn-close"><span class="spacing">X</span>Close ads</a>
+          <div class="info-area">
+            <p class="txt">
+              HOPE Coalition America<i class="br"></i>
+              National Financial Recovery<i class="br"></i>
+              Volunteer at Operation<i class="br"></i>
+              HOPE, Inc.
+            </p>
+            <a href="javascript:;" class="btn-green btn-join-now">Join Now</a>
+          </div>
+          <img src="i/photo-272x391-1.jpg" alt="photo" >
+        </div>
+      </div>
+      <!-- end .with-ads -->
+
+      <div class="white-pannel my-profile-panel">
+        <h2 class="right-panel-titles">My Badges</h2>
+        <a href="javascript:;" class="icons icon-details"></a>
+        <div class="my-badges clearfix">
+          <ul>
+            <li><i class="icons icon-badge"></i></li>
+            <li><i class="icons icon-badge"></i></li>
+            <li><i class="icons icon-badge"></i></li>
+            <li><i class="icons icon-badge"></i></li>
+            <li><i class="icons icon-badge"></i></li>
+            <li><i class="icons icon-badge"></i></li>
+            <li><i class="icons icon-badge"></i></li>
+            <li><i class="icons icon-badge"></i></li>
+            <li><i class="icons icon-badge"></i></li>
+            <li><i class="icons icon-badge"></i></li>
+            <li><i class="icons icon-badge"></i></li>
+          </ul>
+          <!-- end ul -->
+        </div>
+        <!--end .my-badges-->
+      </div>
+      <!--end .my-profile-panel-->
+      <div class="white-pannel my-profile-panel">
+        <h2 class="right-panel-titles">My Groups</h2>
+        <a href="javascript:;" class="icons icon-details"></a>
+        <div class="my-groups">
+          <ul>
+            <li>
+              <div class="pic pull-left">
+                <a href="groups-organization-profile.html"><img src="i/photo-70x50-1.jpg" alt="photo"/></a>
+              </div>
+              <div class="text-area">
+                <h4 class="group-name"><a href="groups-organization-profile.html">Group Name</a></h4>
+                <span class="gray-text">141 Friends</span>
+                <span class="line"></span>
+                <span class="gray-text">250 Members</span>
+              </div>
+            </li>
+            <li>
+              <div class="pic pull-left">
+                <a href="groups-organization-profile.html"><img src="i/photo-70x50-2.jpg" alt="photo"/></a>
+              </div>
+              <div class="text-area">
+                <h4 class="group-name"><a href="groups-organization-profile.html">Group Name</a></h4>
+                <span class="gray-text">31 Friends</span>
+                <span class="line"></span>
+                <span class="gray-text">12 Members</span>
+              </div>
+            </li>
+            <li>
+              <div class="pic pull-left">
+                <a href="groups-organization-profile.html"><img src="i/photo-70x50-3.jpg" alt="photo"/></a>
+              </div>
+              <div class="text-area">
+                <h4 class="group-name"><a href="groups-organization-profile.html">Group Name</a></h4>
+                <span class="gray-text">277 Friends</span>
+                <span class="line"></span>
+                <span class="gray-text">764 Members</span>
+              </div>
+            </li>
+            <li>
+              <div class="pic pull-left">
+                <a href="groups-organization-profile.html"><img src="i/photo-70x50-4.jpg" alt="photo"/></a>
+              </div>
+              <div class="text-area">
+                <h4 class="group-name"><a href="groups-organization-profile.html">Group Name</a></h4>
+                <span class="gray-text">76 Friends</span>
+                <span class="line"></span>
+                <span class="gray-text">49 Members</span>
+              </div>
+            </li>
+          </ul>
+          <!-- end ul -->
+          <div class="my-profile-panel-footer">
+            <a href="javascript:;" class="gray-text">View all</a>
+          </div>
+          <!--end .my-groups-footer-->
+        </div>
+        <!--end .my-groups -->
+      </div>
+      <!--end .my-profile-panel-->
+      <div class="white-pannel my-profile-panel">
+        <h2 class="right-panel-titles">My Friends</h2>
+        <a href="javascript:;" class="icons icon-details"></a>
+        <div class="my-friends">
+          <ul class="clearfix">
+            <li>
+              <a href="javascript:;"><img src="i/people-44x42-1.png" alt="photo"/></a>
+              <span class="active check-circle"></span>
+            </li>
+            <li>
+              <a href="javascript:;"><img src="i/people-44x42-2.png" alt="photo"/></a>
+              <span class="check-circle"></span>
+            </li>
+            <li>
+              <a href="javascript:;"><img src="i/people-44x42-3.png" alt="photo"/></a>
+              <span class="check-circle"></span>
+            </li>
+            <li>
+              <a href="javascript:;"><img src="i/people-44x42-4.png" alt="photo"/></a>
+              <span class="active check-circle"></span>
+            </li>
+            <li>
+              <a href="javascript:;"><img src="i/people-44x42-5.png" alt="photo"/></a>
+              <span class="active check-circle"></span>
+            </li>
+            <li>
+              <a href="javascript:;"><img src="i/people-44x42-6.png" alt="photo"/></a>
+              <span class="check-circle"></span>
+            </li>
+            <li>
+              <a href="javascript:;"><img src="i/people-44x42-7.png" alt="photo"/></a>
+              <span class="active check-circle"></span>
+            </li>
+            <li>
+              <a href="javascript:;"><img src="i/people-44x42-8.png" alt="photo"/></a>
+              <span class="check-circle"></span>
+            </li>
+            <li>
+              <a href="javascript:;"><div class="round dark-blue">AK</div></a>
+              <span class="active check-circle"></span>
+            </li>
+            <li>
+              <a href="groups-organization-profile-groups-member.html"><div class="round light-blue">+24</div></a>
+            </li>
+          </ul>
+          <!-- end ul -->
+          <div class="my-profile-panel-footer">
+            <a href="javascript:;" class="gray-text">
+              <i class="icons icon-plus"></i>
+              Invite people
+            </a>
+          </div>
+          <!--end .my-groups-footer-->
+        </div>
+        <!--end .my-badges-->
+      </div>
+      <!--end .my-profile-panel-->
+    </aside>
+    <!-- end .right-aside -->
+    <div class="container-data">
+      <h2 class="container-titles">My Opportunities</h2>
+      <div class="year-main">
+        <div class="year-event-chronicle">
+          <h3 class="year-h3">2017</h3>
+          <div class="row-event-chronicle">
+            <div class="left-time">
+              <span class="red-border">
+                <span class="red-round"></span>
+              </span>
+              <span class="week-txt"></span>
+              <span class="time-txt">May 10, 2017</span>
+            </div>
+            <!-- end .left-data -->
+            <div class="white-pannel event-chronicle-pannel">
+              <a href="opportunity-detail.html" class="photo-link">
+                <img src="i/tn-mile-103.jpg" alt="photo"/>
+              </a>
+              <div class="infos-txt">
+                <h4 class="title-h4"><a href="opportunity-detail.html">Tennessee River Cleanup</a></h4>
+                <p class="txt">
+                  Knoxville, TN 37865
+                </p>
+                <span class="time-txt">May 10, 2017</span>
+              </div>
+            </div>
+            <!-- end .event-chronicle-pannel -->
+          </div>
+          <!-- end .row-event-chronicle -->
+          <div class="row-event-chronicle">
+            <div class="left-time">
+              <span class="red-border">
+                <span class="red-round"></span>
+              </span>
+              <span class="week-txt"></span>
+              <span class="time-txt">May 02, 2017</span>
+            </div>
+            <!-- end .left-data -->
+            <div class="white-pannel event-chronicle-pannel">
+              <a href="opportunity-detail.html" class="photo-link">
+                <img src="i/IMG_20130510_083243_31.jpg" alt="photo"/>
+              </a>
+              <div class="infos-txt">
+                <h4 class="title-h4"><a href="opportunity-detail.html">Honoring Service at Hart Middle School</a></h4>
+                <p class="txt">
+                  Washington, DC 20032
+                </p>
+                <span class="time-txt">May 02, 2017</span>
+              </div>
+            </div>
+            <!-- end .event-chronicle-pannel -->
+          </div>
+          <!-- end .row-event-chronicle -->
+          <div class="row-event-chronicle">
+            <div class="left-time">
+              <span class="red-border">
+                <span class="red-round"></span>
+              </span>
+              <span class="week-txt"></span>
+              <span class="time-txt">Apr 02, 2017</span>
+            </div>
+            <!-- end .left-data -->
+            <div class="white-pannel event-chronicle-pannel">
+              <a href="opportunity-detail.html" class="photo-link">
+                <img src="i/arts-and-crafts-for-children-under-5.jpg" alt="photo"/>
+              </a>
+              <div class="infos-txt">
+                <h4 class="title-h4"><a href="opportunity-detail.html">Arts & Crafts with Kids</a></h4>
+                <p class="txt">
+                  Riverside, CA 92506
+                </p>
+                <span class="time-txt">Apr 02, 2017</span>
+              </div>
+            </div>
+            <!-- end .event-chronicle-pannel -->
+          </div>
+          <!-- end .row-event-chronicle -->
+          <div class="row-event-chronicle">
+            <div class="left-time">
+              <span class="red-border">
+                <span class="red-round"></span>
+              </span>
+              <span class="week-txt"></span>
+              <span class="time-txt">Mar 24, 2017</span>
+            </div>
+            <!-- end .left-data -->
+            <div class="white-pannel event-chronicle-pannel">
+              <a href="opportunity-detail.html" class="photo-link">
+                <img src="i/large_autobiographicalquilt.jpg" alt="photo"/>
+              </a>
+              <div class="infos-txt">
+                <h4 class="title-h4"><a href="opportunity-detail.html">Quilts for the Homeless</a></h4>
+                <p class="txt">
+                  Atlanta, GA 30318
+                </p>
+                <span class="time-txt">Mar 24, 2017</span>
+              </div>
+            </div>
+            <!-- end .event-chronicle-pannel -->
+          </div>
+          <!-- end .row-event-chronicle -->
+          <div class="row-event-chronicle">
+            <div class="left-time">
+              <span class="red-border">
+                <span class="red-round"></span>
+              </span>
+              <span class="week-txt"></span>
+              <span class="time-txt">Jan 31, 2017</span>
+            </div>
+            <!-- end .left-data -->
+            <div class="white-pannel event-chronicle-pannel">
+              <a href="opportunity-detail.html" class="photo-link">
+                <img src="i/two-dancing-pic-of-week-Copy-620x350.jpg" alt="photo"/>
+              </a>
+              <div class="infos-txt">
+                <h4 class="title-h4"><a href="opportunity-detail.html">Dancing with the Stars</a></h4>
+                <p class="txt">
+                  Atlanta, GA 30318
+                </p>
+                <span class="time-txt">Jan 31, 2017</span>
+              </div>
+            </div>
+            <!-- end .event-chronicle-pannel -->
+          </div>
+          <!-- end .row-event-chronicle -->
+          <div class="row-event-chronicle">
+            <div class="left-time">
+              <span class="red-border">
+                <span class="red-round"></span>
+              </span>
+              <span class="week-txt"></span>
+              <span class="time-txt">Jan 31, 2017</span>
+            </div>
+            <!-- end .left-data -->
+            <div class="white-pannel event-chronicle-pannel">
+              <a href="opportunity-detail.html" class="photo-link">
+                <img src="i/maxresdefault.jpg" alt="photo"/>
+              </a>
+              <div class="infos-txt">
+                <h4 class="title-h4"><a href="opportunity-detail.html">Playful Puppies and Cuddly Kittens</a></h4>
+                <p class="txt">
+                  Atlanta, GA 30318
+                </p>
+                <span class="time-txt">Jan 31, 2017</span>
+              </div>
+            </div>
+            <!-- end .event-chronicle-pannel -->
+          </div>
+          <!-- end .row-event-chronicle -->
+          <div class="row-event-chronicle">
+            <div class="left-time">
+              <span class="red-border">
+                <span class="red-round"></span>
+              </span>
+              <span class="week-txt"></span>
+              <span class="time-txt">Jan 18, 2017</span>
+            </div>
+            <!-- end .left-data -->
+            <div class="white-pannel event-chronicle-pannel">
+              <a href="opportunity-detail.html" class="photo-link">
+                <img src="i/spring-gardening.jpg" alt="photo"/>
+              </a>
+              <div class="infos-txt">
+                <h4 class="title-h4"><a href="opportunity-detail.html">Community Garden Clean-up</a></h4>
+                <p class="txt">
+                  Atlanta, GA 30318
+                </p>
+                <span class="time-txt">Jan 18, 2017</span>
+              </div>
+            </div>
+            <!-- end .event-chronicle-pannel -->
+          </div>
+          <!-- end .row-event-chronicle -->
+          <div class="row-event-chronicle">
+            <div class="left-time">
+              <span class="red-border">
+                <span class="red-round"></span>
+              </span>
+              <span class="week-txt"></span>
+              <span class="time-txt">Jan 10, 2017</span>
+            </div>
+            <!-- end .left-data -->
+            <div class="white-pannel event-chronicle-pannel">
+              <a href="opportunity-detail.html" class="photo-link">
+                <img src="i/train-for-a-5k-walk-460x345.jpg" alt="photo"/>
+              </a>
+              <div class="infos-txt">
+                <h4 class="title-h4"><a href="opportunity-detail.html">5k Run & Walk support for SA Zoo's anniversary</a></h4>
+                <p class="txt">
+                  San Antonio, TX 78209
+                </p>
+                <span class="time-txt">Jan 10, 2017</span>
+              </div>
+            </div>
+            <!-- end .event-chronicle-pannel -->
+          </div>
+          <!-- end .row-event-chronicle -->
+        </div>
+        <!-- end .year-event-chronicle -->
+        <a href="javascript:;" class="link-view-more">View More</a>
+      </div>
+      <!-- end .year-main -->
+    </div>
+    <!-- end .container-data -->
+  </div>
+  <!-- end .tab-details -->
+
+  <div class="tab-content tab-following hide">
+    <div class="group-module">
+      <h3 class="number-text pull-right">7 Groups</h3>
+      <h2 class="container-titles">Groups</h2>
+      <div class="row card-list">
+        <div class="card-item mark">
+          <div class="boxs white-pannel">
+            <div class="card-item-img">
+              <a href="groups-organization-profile.html"><img src="i/photo-333x180-1.jpg" alt="photo" class="photo" /></a>
+              <img src="i/verified-logo-white.png" alt="img" class="mark-img" />
+            </div>
+            <div class="card-item-body">
+              <h4 class="titles"><a href="groups-organization-profile.html">100 Black Men of Philadelphia, Inc.</a></h4>
+              <p class="text detail-text">
+                The mission of the 100 Black Men of Philadelphia, Inc. is to improve the quality of life within our communities 
+                and enhance educational and economic opportunities for disadvantaged minorities.
+              </p>
+              <div class="row-btn btn-rights">
+                <a href="javascript:;" class="btn-gray-border btn-like">
+                  <i class="icons icon-like"></i>
+                  Like
+                </a>
+                <a href="javascript:;" class="btn-gray-border btn-share">
+                  <i class="icons icon-share"></i>
+                  Share
+                </a>
+                <a href="javascript:;" class="btn-gray pull-right">
+                  Donate
+                </a>
+              </div>
+            </div>
+            <!-- end .card-item-body -->
+            <div class="card-item-footer">
+              <ul class="clearfix">
+                <li>
+                  <i class="icons icon-user"></i>
+                  <span>132</span>
+                </li>
+                <li>
+                  <i class="icons icon-share"></i>
+                  <span>302</span>
+                </li>
+                <li>
+                  <i class="icons icon-heart"></i>
+                  <span>483</span>
+                </li>
+                <li>
+                  <i class="icons icon-chart"></i>
+                  <span>48</span>
+                </li>
+                <li>
+                  <i class="icons icon-hand-heart"></i>
+                  <span>$2,740</span>
+                </li>
+              </ul>
+            </div>
+            <!--end .card-item-footer-->
+          </div>
+        </div>
+        <!--end .card-item-->
+        <div class="card-item">
+          <div class="boxs white-pannel">
+            <div class="card-item-img">
+              <a href="groups-organization-profile.html"><img src="i/photo-333x180-2.jpg" alt="photo" class="photo" /></a>
+              <img src="i/verified-logo-white.png" alt="img" class="mark-img" />
+            </div>
+            <div class="card-item-body">
+              <h4 class="titles"><a href="groups-organization-profile.html">A Fair Shake for Youth</a></h4>
+              <p class="text detail-text">
+                A Fair Shake for Youth, Inc. is a non-profit that uses therapy dogs to help disadvantaged middle-school 
+                aged youth build empathy, self-esteem, and reduce bullying.
+              </p>
+              <div class="row-btn btn-rights">
+                <a href="javascript:;" class="btn-gray-border btn-like">
+                  <i class="icons icon-like"></i>
+                  Like
+                </a>
+                <a href="javascript:;" class="btn-gray-border btn-share">
+                  <i class="icons icon-share"></i>
+                  Share
+                </a>
+                <a href="javascript:;" class="btn-gray pull-right">
+                  Donate
+                </a>
+              </div>
+            </div>
+            <!-- end .card-item-body -->
+            <div class="card-item-footer">
+              <ul class="clearfix">
+                <li>
+                  <i class="icons icon-user"></i>
+                  <span>132</span>
+                </li>
+                <li>
+                  <i class="icons icon-share"></i>
+                  <span>302</span>
+                </li>
+                <li>
+                  <i class="icons icon-heart"></i>
+                  <span>483</span>
+                </li>
+                <li>
+                  <i class="icons icon-chart"></i>
+                  <span>48</span>
+                </li>
+                <li>
+                  <i class="icons icon-hand-heart"></i>
+                  <span>$2,740</span>
+                </li>
+              </ul>
+            </div>
+            <!--end .card-item-footer-->
+          </div>
+        </div>
+        <!--end .card-item-->
+        <div class="card-item mark">
+          <div class="boxs white-pannel">
+            <div class="card-item-img">
+              <a href="groups-organization-profile.html"><img src="i/photo-333x180-3.jpg" alt="photo" class="photo" /></a>
+              <img src="i/verified-logo-white.png" alt="img" class="mark-img" />
+            </div>
+            <div class="card-item-body">
+              <h4 class="titles"><a href="groups-organization-profile.html">Ace of Hearts Dog Rescue</a></h4>
+              <p class="text detail-text">
+                We are a 501c-3 dog rescue foundation dedicated to rescuing dogs, 
+                the day they are to be euthanized, from various Los Angeles shelters and placing them in loving homes.
+              </p>
+              <div class="row-btn btn-rights">
+                <a href="javascript:;" class="btn-gray-border btn-like">
+                  <i class="icons icon-like"></i>
+                  Like
+                </a>
+                <a href="javascript:;" class="btn-gray-border btn-share">
+                  <i class="icons icon-share"></i>
+                  Share
+                </a>
+                <a href="javascript:;" class="btn-gray pull-right">
+                  Donate
+                </a>
+              </div>
+            </div>
+            <!-- end .card-item-body -->
+            <div class="card-item-footer">
+              <ul class="clearfix">
+                <li>
+                  <i class="icons icon-user"></i>
+                  <span>132</span>
+                </li>
+                <li>
+                  <i class="icons icon-share"></i>
+                  <span>302</span>
+                </li>
+                <li>
+                  <i class="icons icon-heart"></i>
+                  <span>483</span>
+                </li>
+                <li>
+                  <i class="icons icon-chart"></i>
+                  <span>48</span>
+                </li>
+                <li>
+                  <i class="icons icon-hand-heart"></i>
+                  <span>$2,740</span>
+                </li>
+              </ul>
+            </div>
+            <!--end .card-item-footer-->
+          </div>
+        </div>
+        <!--end .card-item-->
+      </div>
+      <!--end .card-list-->
+      <div class="btn-more-box">
+        <a href="javascript:;" class="btn-gray-border">See more</a>
+      </div>
+    </div>
+    <!--end .group-module-->
+  </div>
+  <!-- end .tab-following -->
+
+  <div class="tab-content tab-favorites hide">
+    <div class="favorites-opportunities-module">
+      <h3 class="number-text pull-right">16 Favorites</h3>
+      <h2 class="container-titles">Opportunities</h2>
+      <div class="row card-list">
+        <div class="card-item card-h156">
+          <div class="boxs white-pannel clearfix">
+            <div class="card-left-img pull-left">
+              <a href="opportunity-detail.html"><img src="i/photo-124x120-1.jpg" alt="photo" class="photo" /></a>
+            </div>
+            <div class="card-item-body little-card-body">
+              <h4 class="titles"><a href="opportunity-detail.html">5k Run & Walk support for SA Zoo's anniversary</a></h4>
+              <p class="text detail-text">
+                Volunteers will support the 5k Run & Walk for the Zoo's Celebration by serving as course pointers, 
+                water station volunteers and cheerleaders along the route.
+              </p>
+            </div>
+            <!-- end .card-item-body -->
+          </div>
+        </div>
+        <!--end .card-item-->
+        <div class="card-item card-h156">
+          <div class="boxs white-pannel clearfix">
+            <div class="card-left-img pull-left">
+              <a href="opportunity-detail.html"><img src="i/photo-124x120-1.jpg" alt="photo" class="photo" /></a>
+            </div>
+            <div class="card-item-body little-card-body">
+              <h4 class="titles"><a href="opportunity-detail.html">Arts & Crafts with Kids</a></h4>
+              <p class="text detail-text">
+                We need folks to help kids at the shelter with arts and crafts projects 
+                while their parents are in counseling sessions you can help!
+              </p>
+            </div>
+            <!-- end .card-item-body -->
+          </div>
+        </div>
+        <!--end .card-item-->
+        <div class="card-item card-h156">
+          <div class="boxs white-pannel clearfix">
+            <div class="card-left-img pull-left">
+              <a href="opportunity-detail.html"><img src="i/photo-124x120-1.jpg" alt="photo" class="photo" /></a>
+            </div>
+            <div class="card-item-body little-card-body">
+              <h4 class="titles"><a href="opportunity-detail.html">Community Garden Clean-up</a></h4>
+              <p class="text detail-text">
+                Volunteers will clean the winter crops and prepare beds for Spring plantings.
+              </p>
+            </div>
+            <!-- end .card-item-body -->
+          </div>
+        </div>
+        <!--end .card-item-->
+        <div class="card-item card-h156">
+          <div class="boxs white-pannel clearfix">
+            <div class="card-left-img pull-left">
+              <a href="opportunity-detail.html"><img src="i/photo-124x120-1.jpg" alt="photo" class="photo" /></a>
+            </div>
+            <div class="card-item-body little-card-body">
+              <h4 class="titles"><a href="opportunity-detail.html">Dancing with the Stars</a></h4>
+              <p class="text detail-text">
+                Volunteers are needed to help set-up for our monthly dance for the residents of our Senior Retirement Home. 
+                We also welcome you to serve as dance partners for our lively residents!
+              </p>
+            </div>
+            <!-- end .card-item-body -->
+          </div>
+        </div>
+        <!--end .card-item-->
+        <div class="card-item card-h156">
+          <div class="boxs white-pannel clearfix">
+            <div class="card-left-img pull-left">
+              <a href="opportunity-detail.html"><img src="i/photo-124x120-1.jpg" alt="photo" class="photo" /></a>
+            </div>
+            <div class="card-item-body little-card-body">
+              <h4 class="titles"><a href="opportunity-detail.html">Honoring Service at Hart Middle School</a></h4>
+              <p class="text detail-text">
+                Join a team of volunteers who will work alongside their families to serve their community. Build picnic tables for an outdoor classroom, set up rain barrels, plant flowering shrubs around the school building, organize school resource rooms, and participate in other school beautification projects.<br/>
+              "If not me, then who..."<br/>
+              This project is hosted in partnership with The Travis Manion Foundation. The Travis Manion Foundation works to inspire and activate everyone with the generous spirit of those who serve. They honor the fallen by challenging the living, assist our nation's veterans and service members, and support families of fallen heroes.
+              </p>
+            </div>
+            <!-- end .card-item-body -->
+          </div>
+        </div>
+        <!--end .card-item-->
+        <div class="card-item card-h156">
+          <div class="boxs white-pannel clearfix">
+            <div class="card-left-img pull-left">
+              <a href="opportunity-detail.html"><img src="i/photo-124x120-1.jpg" alt="photo" class="photo" /></a>
+            </div>
+            <div class="card-item-body little-card-body">
+              <h4 class="titles"><a href="opportunity-detail.html">Playful Puppies and Cuddly Kittens</a></h4>
+              <p class="text detail-text">
+                Our volunteers bring a little human companionship to the rescued animals at the Friends of Animals Foundation. 
+                Volunteers help walk dogs, feed cats and socialize with the animals, 
+                bringing some positive energy to the shelter as the animals wait for a new home.
+              </p>
+            </div>
+            <!-- end .card-item-body -->
+          </div>
+        </div>
+        <!--end .card-item-->
+        <div class="card-item card-h156">
+          <div class="boxs white-pannel clearfix">
+            <div class="card-left-img pull-left">
+              <a href="opportunity-detail.html"><img src="i/photo-124x120-1.jpg" alt="photo" class="photo" /></a>
+            </div>
+            <div class="card-item-body little-card-body">
+              <h4 class="titles"><a href="opportunity-detail.html">Tennessee River Cleanup</a></h4>
+              <p class="text detail-text">
+                We need volunteers to help clean up the banks of the Tennessee River.
+              </p>
+            </div>
+            <!-- end .card-item-body -->
+          </div>
+        </div>
+        <!--end .card-item-->
+        <div class="card-item card-h156">
+          <div class="boxs white-pannel clearfix">
+            <div class="card-left-img pull-left">
+              <a href="opportunity-detail.html"><img src="i/photo-124x120-1.jpg" alt="photo" class="photo" /></a>
+            </div>
+            <div class="card-item-body little-card-body">
+              <h4 class="titles"><a href="opportunity-detail.html">Quilts for the Homeless</a></h4>
+              <p class="text detail-text">
+                Help us make quilts for distribution on cold nights to our city's 
+                homeless population. We will provide supplies and light snacks.
+              </p>
+            </div>
+            <!-- end .card-item-body -->
+          </div>
+        </div>
+        <!--end .card-item-->
+      </div>
+      <!--end .card-list-->
+      <div class="btn-more-box">
+        <a href="javascript:;" class="btn-gray-border">See more</a>
+      </div>
+      <!--end .btn-more-box-->
+    </div>
+    <!--end .favorites-opportunities-module-->
+  </div>
+  <!-- end .tab-favorites -->
+
+  <div class="tab-content tab-badges hide">
+    <div class="volunteer-badges-module">
+      <h3 class="number-text pull-right">6 Badges</h3>
+      <h2 class="container-titles">Volunteer Badges</h2>
+      <div class="row card-list">
+        <div class="card-item card-w25 card-h257">
+          <div class="boxs white-pannel clearfix">
+            <div class="badges-img-box">
+              <i class="icons icon-volunteer-badges"></i>
+            </div>
+            <div class="card-item-body">
+              <h4 class="titles"><a href="javascript:;">Badges Name</a></h4>
+              <p class="text detail-text">
+                Event name lorem ipsum
+                dolor sit amet
+              </p>
+            </div>
+            <!-- end .card-item-body -->
+          </div>
+        </div>
+        <!--end .card-item-->
+        <div class="card-item card-w25 card-h257">
+          <div class="boxs white-pannel clearfix">
+            <div class="badges-img-box">
+              <i class="icons icon-volunteer-badges"></i>
+            </div>
+            <div class="card-item-body">
+              <h4 class="titles"><a href="javascript:;">Badges Name</a></h4>
+              <p class="text detail-text">
+                Event name lorem ipsum
+                dolor sit amet
+              </p>
+            </div>
+            <!-- end .card-item-body -->
+          </div>
+        </div>
+        <!--end .card-item-->
+        <div class="card-item card-w25 card-h257">
+          <div class="boxs white-pannel clearfix">
+            <div class="badges-img-box">
+              <i class="icons icon-volunteer-badges"></i>
+            </div>
+            <div class="card-item-body">
+              <h4 class="titles"><a href="javascript:;">Badges Name</a></h4>
+              <p class="text detail-text">
+                Event name lorem ipsum
+                dolor sit amet
+              </p>
+            </div>
+            <!-- end .card-item-body -->
+          </div>
+        </div>
+        <!--end .card-item-->
+        <div class="card-item card-w25 card-h257">
+          <div class="boxs white-pannel clearfix">
+            <div class="badges-img-box">
+              <i class="icons icon-volunteer-badges"></i>
+            </div>
+            <div class="card-item-body">
+              <h4 class="titles"><a href="javascript:;">Badges Name</a></h4>
+              <p class="text detail-text">
+                Event name lorem ipsum
+                dolor sit amet
+              </p>
+            </div>
+            <!-- end .card-item-body -->
+          </div>
+        </div>
+        <!--end .card-item-->
+      </div>
+      <!--end .card-list-->
+      <div class="btn-more-box">
+        <a href="javascript:;" class="btn-gray-border">See more</a>
+      </div>
+      <!--end .btn-more-box-->
+    </div>
+    <!-- end .volunteer-badges-module -->
+    <div class="organization-badges-module">
+      <h3 class="number-text pull-right">5 Badges</h3>
+      <h2 class="container-titles">Organization Badges</h2>
+      <div class="row card-list">
+        <div class="card-item card-w25 card-h257">
+          <div class="boxs white-pannel clearfix">
+            <div class="badges-img-box">
+              <i class="icons icon-organization-badges"></i>
+            </div>
+            <div class="card-item-body">
+              <h4 class="titles"><a href="groups-organization-profile.html">100 Black Men of Philadelphia, Inc.</a></h4>
+              <p class="text detail-text">
+                The mission of the 100 Black Men of Philadelphia, Inc. is to improve the quality of life within our communities 
+                and enhance educational and economic opportunities for disadvantaged minorities.
+              </p>
+            </div>
+            <!-- end .card-item-body -->
+          </div>
+        </div>
+        <!--end .card-item-->
+        <div class="card-item card-w25 card-h257">
+          <div class="boxs white-pannel clearfix">
+            <div class="badges-img-box">
+              <i class="icons icon-organization-badges"></i>
+            </div>
+            <div class="card-item-body">
+              <h4 class="titles"><a href="groups-organization-profile.html">A Fair Shake for Youth</a></h4>
+              <p class="text detail-text">
+                A Fair Shake for Youth, Inc. is a non-profit that uses therapy dogs to help disadvantaged middle-school 
+                aged youth build empathy, self-esteem, and reduce bullying.
+              </p>
+            </div>
+            <!-- end .card-item-body -->
+          </div>
+        </div>
+        <!--end .card-item-->
+        <div class="card-item card-w25 card-h257">
+          <div class="boxs white-pannel clearfix">
+            <div class="badges-img-box">
+              <i class="icons icon-organization-badges"></i>
+            </div>
+            <div class="card-item-body">
+              <h4 class="titles"><a href="groups-organization-profile.html">Ace of Hearts Dog Rescue</a></h4>
+              <p class="text detail-text">
+                We are a 501c-3 dog rescue foundation dedicated to rescuing dogs, 
+                the day they are to be euthanized, from various Los Angeles shelters and placing them in loving homes.
+              </p>
+            </div>
+            <!-- end .card-item-body -->
+          </div>
+        </div>
+        <!--end .card-item-->
+      </div>
+      <!--end .card-list-->
+      <div class="btn-more-box">
+        <a href="javascript:;" class="btn-gray-border">See more</a>
+      </div>
+      <!--end .btn-more-box-->
+    </div>
+  </div>
+  <!-- end .tab-badges -->
+</main>
+<!-- end .my-profile-main -->
+
+<footer class="footer">
+  <div class="mains">
+    <h2 class="titles">POINTS OF LIGHT</h2>
+    <p class="text">Points of Light is the largest organization in the world dedicated to volunteer service.</p>
+    <nav class="link-group clearfix pull-left">
+      <ul>
+        <li><a href="javascript:;">About Us</a>|</li>
+        <li><a href="javascript:;">FAQ</a>|</li>
+        <li><a href="javascript:;">Partners</a>|</li>
+        <li><a href="javascript:;">Privacy Policy</a>|</li>
+        <li><a href="javascript:;">Terms of Service</a>|</li>
+        <li><a href="javascript:;">Media</a></li>
+      </ul>
+    </nav>
+    <div class="copyright pull-right">&copy; 2016 Points of Light</div>
+  </div>
+</footer>
+<!-- end .footer -->
+</body>
+</html>
