@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App'
 import Other from './Other'
 import UserMainLogin from './components/user-main-login.vue'
-import Register from './Register.vue'
+import Register from './components/Register.vue'
 // css imports
 import './lib/bootstrap/css/bootstrap.min.css'
 import './css/jquery.ui.css'
